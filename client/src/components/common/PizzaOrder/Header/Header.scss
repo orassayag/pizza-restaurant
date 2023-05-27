@@ -1,0 +1,27 @@
+.orders-cart {
+  .fa-circle {
+    color: #dbeafe;
+  }
+
+  .fa-stack[data-count]:after {
+    position: absolute;
+    right: 0%;
+    top: 1%;
+    content: attr(data-count);
+    font-size: 50%;
+    padding: 0.6em;
+    border-radius: 999px;
+    line-height: 0.55em;
+    color: #ffffff;
+    background: rgba(255, 0, 0, 0.85);
+    text-align: center;
+    min-width: 1em;
+    font-weight: bold;
+  }
+
+  .fa-pizza-slice {
+    cursor: default !important;
+    --fa-primary-color: #be7713;
+    --fa-secondary-color: #ff6600;
+  }
+}

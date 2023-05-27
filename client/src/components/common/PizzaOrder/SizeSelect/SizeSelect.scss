@@ -1,0 +1,29 @@
+.size-selector {
+  &.active {
+    .fa-pizza-slice {
+      cursor: pointer;
+      --fa-primary-color: #be7713;
+      --fa-secondary-color: #ff6600;
+    }
+  }
+}
+
+.fa-pizza-slice {
+  &.small {
+    font-size: 1.5rem;
+  }
+  &.medium {
+    font-size: 2rem;
+  }
+  &.large {
+    font-size: 2.5rem;
+  }
+  &.extra-large {
+    font-size: 3rem;
+  }
+  &:hover {
+    cursor: pointer;
+    --fa-primary-color: #be7713;
+    --fa-secondary-color: #ff6600;
+  }
+}

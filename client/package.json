@@ -1,0 +1,39 @@
+{
+  "name": "pizza-restaurant-client",
+  "version": "0.1.0",
+  "private": false,
+  "description": "",
+  "author": "Or Assayag <orassayag@gmail.com>",
+  "main": "src/pages/_app.js",
+  "scripts": {
+    "dev": "npm run open-browser && next dev",
+    "open-browser": "start http://localhost:3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "autoprefixer": "^10.4.14",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-no-inline-styles": "^1.0.5",
+    "eslint-plugin-security": "^1.7.1",
+    "postcss": "^8.4.23"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "chance": "^1.1.11",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "framer-motion": "^10.12.16",
+    "next": "13.4.4",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.11.2",
+    "sass": "^1.62.0",
+    "socket.io-client": "^4.6.1",
+    "tailwindcss": "^3.3.2",
+    "yup": "^1.2.0"
+  }
+}

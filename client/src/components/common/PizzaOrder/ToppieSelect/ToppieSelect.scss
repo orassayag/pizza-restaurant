@@ -1,0 +1,273 @@
+.mdlToppings {
+  .segmentations {
+    button {
+      background: url("../../../../assets/images/sprites_new10.png") no-repeat;
+      display: inline-block;
+    }
+    .F {
+      &.active,
+      &:hover {
+        background-position: -982px -629px;
+      }
+    }
+    .L {
+      &.active,
+      &:hover {
+        background-position: -956px -629px;
+      }
+    }
+    .R {
+      &.active,
+      &:hover {
+        background-position: -928px -629px;
+      }
+    }
+    .Q {
+      &.active,
+      &:hover {
+        background-position: -901px -629px;
+      }
+    }
+  }
+}
+
+.mdlToppings {
+  > button {
+    border-bottom: 1px solid #808080;
+    padding: 0 16px 0 0;
+    line-height: 0;
+    &.arrow:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+      border: none;
+      outline: none;
+    }
+  }
+  .segmentations {
+    padding: 2px;
+    button {
+      float: right;
+      text-indent: -9999px;
+      width: 29px;
+      height: 29px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+  }
+  .layer.mdlToppings {
+    .Q {
+      button {
+        text-indent: 0;
+        width: 100px;
+        background: none;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+.toppie {
+  display: flex;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.fa-pepper-hot {
+  font-size: 1rem;
+  --fa-primary-color: #59b332;
+  --fa-secondary-color: #e30d0d;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-tomato {
+  --fa-primary-color: #60f000;
+  --fa-secondary-color: #ff0000;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-eggplant {
+  --fa-primary-color: #32a800;
+  --fa-secondary-color: #8100bd;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-pepper {
+  &.green {
+    --fa-primary-color: #000000;
+    --fa-secondary-color: #03d100;
+    --fa-secondary-opacity: 1;
+  }
+  &.red {
+    --fa-primary-color: #000000;
+    --fa-secondary-color: #ff0000;
+    --fa-secondary-opacity: 1;
+  }
+}
+
+.fa-onion {
+  --fa-primary-color: #ad0000;
+  --fa-secondary-color: #f06c00;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-pineapple {
+  --fa-primary-color: #00a303;
+  --fa-secondary-color: #e67a00;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-broccoli {
+  --fa-primary-color: #00e604;
+  --fa-secondary-color: #098a00;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-mushroom {
+  --fa-primary-color: #855b00;
+  --fa-secondary-color: #a3632e;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-olive-branch {
+  &.green {
+    --fa-primary-color: #7a4700;
+    --fa-secondary-color: #087500;
+    --fa-secondary-opacity: 1;
+  }
+  &.black {
+    --fa-primary-color: #7a4700;
+    --fa-secondary-color: #000000;
+    --fa-secondary-opacity: 1;
+  }
+}
+
+.fa-garlic {
+  --fa-primary-color: #595959;
+  --fa-secondary-color: #b0b0b0;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-fish {
+  --fa-primary-color: #b55a5a;
+  --fa-secondary-color: #753e3e;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-meat {
+  --fa-primary-color: #bc5952;
+  --fa-secondary-color: #caafaf;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-corn {
+  --fa-primary-color: #69cc33;
+  --fa-secondary-color: #f2dc50;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-sausage {
+  --fa-primary-color: #942c00;
+  --fa-secondary-color: #dc5318;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-bacon {
+  --fa-primary-color: #9e6400;
+  --fa-secondary-color: #f8b644;
+  --fa-secondary-opacity: 1;
+}
+
+.fa-cheese-swiss {
+  --fa-primary-color: #e0f000;
+  --fa-secondary-color: #dba100;
+  --fa-secondary-opacity: 1;
+}
+
+@media screen and (min-width: 767px) {
+  .toppies-label {
+    width: 150px;
+  }
+  .mdlToppings {
+    .segmentations {
+      .F {
+        background-position: -983px -591px;
+      }
+      .L {
+        background-position: -956px -591px;
+      }
+      .R {
+        background-position: -929px -591px;
+      }
+      .Q {
+        background-position: -901px -591px;
+        margin-right: 1px;
+      }
+    }
+    .segmentations button {
+      width: 24px;
+      height: 25px;
+    }
+    .segmentations .F:hover {
+      background-position: -982px -629px;
+    }
+    .segmentations .L:hover {
+      background-position: -956px -629px;
+    }
+    .segmentations .R:hover {
+      background-position: -928px -629px;
+    }
+    .segmentations .Q:hover {
+      background-position: -901px -629px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .toppies-label {
+    width: 30%;
+  }
+  .toppies-id {
+    width: 80%;
+  }
+  .mdlToppings {
+    .segmentations {
+      width: 60%;
+      .F {
+        background-position: -420px -337px;
+        &.active,
+        &:hover {
+          background-position: -982px -629px;
+        }
+      }
+      .L {
+        background-position: -358px -337px;
+        &.active,
+        &:hover {
+          background-position: -952px -629px;
+        }
+      }
+      .R {
+        background-position: -389px -337px;
+        &.active,
+        &:hover {
+          background-position: -928px -629px;
+        }
+      }
+      .Q {
+        background-position: -328px -337px;
+        &.active,
+        &:hover {
+          background-position: -901px -629px;
+        }
+      }
+    }
+  }
+}
