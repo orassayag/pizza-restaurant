@@ -1,0 +1,29 @@
+So what I would do If I have more time for this project?
+Well (Of course, put all on a docker, but besides that):
+
+SERVER:
+=======
+ToDo:
+# All the ToDo points I wrote around the project.
+# Validation on the order from the client (Using Joi for example).
+# Implement a scheduler to retry on all orders that for some reason are in the stage of PENDING or ERROR.
+# Move all settings to config file.
+# Better structure of the TypeScript (Reduce places of "any").
+# Unit test / Integration tests.
+
+CLIENT:
+=======
+ToDo:
+# Add useCallback and useMemo for the relevant places.
+# Load all toppies and sizes from the server.
+# Fix the script bug (In the console).
+# Add loader if not connected yet.
+# If no orders - Display a message of no orders.
+# Move all settings to config file.
+# Add yup Validation to order (User).
+# Handle errors from the server.
+# Add redux-toolkit for better state management.
+# When disconnected and have orders - Display a message.
+# Unit test / Integration tests.
+# Add prop-types for each component.
+# Add the user details modal + Add yup Validation:
