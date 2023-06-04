@@ -1,0 +1,14 @@
+Since I didn't make it on a container (Lake of time), please make sure to have MongoDB installed on your PC.
+Fork the project or download it.
+Open the server project.
+On the terminal: npm i
+Once finished, on terminal: npm run dev
+Wait for MongoDB and Socket.IO to be up.
+Open the client project.
+On the terminal: npm i
+Once finished, on terminal: npm run dev
+Wait for the client to connect to the server's Socket.IO.
+Once the UI is up, click on the red "Order" button and make some yummy pizzas.
+Once you click on the "Checkout" button you will start to see all your orders.
+Let the show begin and happy testing! :)
+If, for some reason, you submitted orders and you don't see them, reload the page. If it's not work, restart the server (& the client if needed).
