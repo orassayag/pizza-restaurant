@@ -2,8 +2,25 @@
   "name": "pizza-restaurant-client",
   "version": "0.1.0",
   "private": false,
-  "description": "",
+  "description": "Real-time pizza restaurant management system - Client-side with Next.js, React, Tailwind CSS, Socket.IO, and beautiful animations",
   "author": "Or Assayag <orassayag@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orassayag/pizza-restaurant.git"
+  },
+  "keywords": [
+    "pizza",
+    "restaurant",
+    "nextjs",
+    "react",
+    "tailwindcss",
+    "socket.io-client",
+    "real-time",
+    "framer-motion",
+    "order-tracking",
+    "ui-animation"
+  ],
   "main": "src/pages/_app.js",
   "scripts": {
     "dev": "npm run open-browser && next dev",

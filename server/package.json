@@ -1,7 +1,7 @@
 {
   "name": "pizza-restaurant-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Real-time pizza restaurant management system - Server-side with Node.js, TypeScript, MongoDB, Socket.IO, and worker simulation",
   "main": "index.ts",
   "scripts": {
     "lint": "eslint src",
@@ -12,6 +12,10 @@
     "dev": "nodemon src/app.ts",
     "kill": "taskkill -f -im node.exe"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orassayag/pizza-restaurant.git"
+  },
   "contributors": [
     {
       "name": "Or Assayag",
@@ -19,9 +23,21 @@
       "url": "https://github.com/orassayag"
     }
   ],
-  "keywords": [],
+  "keywords": [
+    "pizza",
+    "restaurant",
+    "real-time",
+    "socket.io",
+    "mongodb",
+    "typescript",
+    "nodejs",
+    "express",
+    "worker-simulation",
+    "order-management",
+    "workflow-automation"
+  ],
   "author": "Or Assayag",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chance": "^1.1.11",
     "debug": "^4.3.4",
