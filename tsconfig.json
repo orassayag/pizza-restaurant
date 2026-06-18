@@ -12,7 +12,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "strict": true,
-    "noEmitOnError": false
+    "noEmitOnError": false,
+    "types": ["node", "vitest"]
   },
   "include": ["src", "**/*.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "dist"]

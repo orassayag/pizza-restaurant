@@ -27,8 +27,7 @@ const usePizzaRestaurant = () => {
       if (!orders?.length) {
         return;
       }
-      const sortedData = orders
-        .sort((a, b) => b.stageLevel - a.stageLevel);
+      const sortedData = orders.sort((a, b) => b.stageLevel - a.stageLevel);
       setRestaurantData([...sortedData]);
     };
     socket.on('connect', onConnect);

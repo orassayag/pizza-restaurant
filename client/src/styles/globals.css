@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Kommon";
-  src: url("../assets/fonts/Kommon\ Grotesk/Kommon Grotesk Light.otf")
-    format("opentype");
+  font-family: 'Kommon';
+  src: url('../assets/fonts/Kommon\ Grotesk/Kommon Grotesk Light.otf')
+    format('opentype');
 }
 
 iframe {
@@ -25,5 +25,5 @@ body {
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  font-family: "Kommon", sans-serif;
+  font-family: 'Kommon', sans-serif;
 }

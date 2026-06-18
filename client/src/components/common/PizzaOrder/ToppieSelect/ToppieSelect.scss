@@ -1,7 +1,7 @@
 .mdlToppings {
   .segmentations {
     button {
-      background: url("../../../../assets/images/sprites_new10.png") no-repeat;
+      background: url('../../../../assets/images/sprites_new10.png') no-repeat;
       display: inline-block;
     }
     .F {
@@ -37,7 +37,7 @@
     padding: 0 16px 0 0;
     line-height: 0;
     &.arrow:after {
-      content: ".";
+      content: '.';
       display: block;
       clear: both;
       visibility: hidden;

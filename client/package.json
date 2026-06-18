@@ -2,40 +2,77 @@
   "name": "pizza-restaurant-client",
   "version": "0.1.0",
   "private": false,
-  "description": "Real-time pizza restaurant management system - Client-side with Next.js, React, Tailwind CSS, Socket.IO, and beautiful animations",
-  "author": "Or Assayag <orassayag@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/orassayag/pizza-restaurant.git"
-  },
+  "description": "A real-time restaurant simulator managing a multi-stage pizza workflow. This full-stack application orchestrates concurrent worker queues from dough prep to serving. It uses TypeScript, Node.js, and Socket.IO for live data streaming to an animated Next.js UI, all backed by a MongoDB database",
   "keywords": [
-    "pizza",
-    "restaurant",
+    "pizza-restaurant",
+    "real-time",
+    "worker-simulation",
+    "socketio",
+    "typescript",
+    "nodejs",
+    "express",
     "nextjs",
     "react",
-    "tailwindcss",
-    "socket.io-client",
-    "real-time",
+    "mongodb",
+    "mongoose",
+    "fullstack",
+    "tailwind-css",
     "framer-motion",
-    "order-tracking",
-    "ui-animation"
+    "state-management",
+    "queue-management",
+    "concurrent-processing",
+    "sequence-diagram",
+    "dashboard",
+    "order-tracking"
   ],
-  "main": "src/pages/_app.js",
-  "scripts": {
-    "dev": "npm run open-browser && next dev",
-    "open-browser": "start http://localhost:3000",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+  "homepage": "https://github.com/orassayag/pizza-restaurant#readme",
+  "bugs": {
+    "url": "https://github.com/orassayag/pizza-restaurant/issues"
   },
-  "devDependencies": {
-    "@babel/eslint-parser": "^7.21.3",
-    "autoprefixer": "^10.4.14",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-no-inline-styles": "^1.0.5",
-    "eslint-plugin-security": "^1.7.1",
-    "postcss": "^8.4.24"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/pizza-restaurant.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/orassayag"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Or Assayag",
+    "email": "orassayag@gmail.com",
+    "url": "https://github.com/orassayag"
+  },
+  "contributors": [
+    {
+      "name": "Or Assayag",
+      "email": "orassayag@gmail.com",
+      "url": "https://github.com/orassayag"
+    }
+  ],
+  "type": "commonjs",
+  "main": "src/pages/_app.js",
+  "files": [
+    ".vscode",
+    "public",
+    "src",
+    ".eslintrc.json",
+    ".gitignore",
+    ".prettierrc",
+    "jsconfig.json",
+    "knip.json",
+    "next.config.js",
+    "package-lock.json",
+    "package.json",
+    "postcss.config.js",
+    "tailwind.config.js"
+  ],
+  "scripts": {
+    "build": "next build",
+    "dev": "npm run open-browser && next dev",
+    "lint": "next lint",
+    "open-browser": "start http://localhost:3000",
+    "start": "next start"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.15",
@@ -52,5 +89,13 @@
     "socket.io-client": "^4.6.2",
     "tailwindcss": "^3.3.2",
     "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "autoprefixer": "^10.4.14",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-no-inline-styles": "^1.0.5",
+    "eslint-plugin-security": "^1.7.1",
+    "postcss": "^8.4.24"
   }
 }

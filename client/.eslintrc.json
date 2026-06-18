@@ -1,11 +1,6 @@
 {
   "parser": "@babel/eslint-parser",
-  "plugins": [
-    "security",
-    "react",
-    "import",
-    "eslint-plugin-no-inline-styles"
-  ],
+  "plugins": ["security", "react", "import", "eslint-plugin-no-inline-styles"],
   "extends": [
     "plugin:security/recommended",
     "plugin:import/react",
@@ -67,16 +62,11 @@
     "eslint-disable no-underscore-dangle": 0,
     "no-underscore-dangle": 0,
     "react-hooks/exhaustive-deps": 0,
-    "arrow-parens": [
-      "error",
-      "always"
-    ],
+    "arrow-parens": ["error", "always"],
     "no-restricted-imports": [
       "error",
       {
-        "patterns": [
-          "@mui/*/*/*"
-        ]
+        "patterns": ["@mui/*/*/*"]
       }
     ],
     "react/jsx-no-duplicate-props": [

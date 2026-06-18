@@ -5,22 +5,16 @@ import DefaultColumn from '../DefaultColumn/DefaultColumn';
 import UserColumn from '../UserColumn/UserColumn';
 import StageColumn from '../StageColumn/StageColumn';
 
-export default function OrdersTable({
-  orders,
-  setRestaurantData,
-}) {
+export default function OrdersTable({ orders, setRestaurantData }) {
   return (
-    <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
-      <div className="inline-block min-w-full shadow-md rounded-lg overflow-hidden">
+    <div className='-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto'>
+      <div className='inline-block min-w-full shadow-md rounded-lg overflow-hidden'>
         <Reorder.Group values={orders} onReorder={setRestaurantData}>
-          <table className="min-w-full leading-normal">
+          <table className='min-w-full leading-normal'>
             <thead>
               <tr>
                 {PizzaRestaurantHelper.columns.map((column) => (
-                  <TableHeader
-                    key={column.title}
-                    {...column}
-                  />
+                  <TableHeader key={column.title} {...column} />
                 ))}
               </tr>
             </thead>
@@ -31,7 +25,7 @@ export default function OrdersTable({
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    as="tr"
+                    as='tr'
                     key={order._id}
                     value={order.stageLevel}
                     dragListener={false}
@@ -43,15 +37,14 @@ export default function OrdersTable({
                       imageId={order.user.imageId}
                     />
                     {PizzaRestaurantHelper.columns
-                      .filter((column) => column.isColumnType).map((column) => (
+                      .filter((column) => column.isColumnType)
+                      .map((column) => (
                         <DefaultColumn
                           key={column.title}
                           value={order[column.fieldName]}
                         />
                       ))}
-                    <StageColumn
-                      stage={order.stage}
-                    />
+                    <StageColumn stage={order.stage} />
                   </Reorder.Item>
                 ))}
               </AnimatePresence>

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "ignore": [
+    "src/components/pages/PizzaOrder/PizzaOrder.scss",
+    "src/styles/globals.css"
+  ],
+  "ignoreDependencies": [
+    "eslint",
+    "prop-types",
+    "react-dom",
+    "react-router-dom",
+    "sass"
+  ],
+  "ignoreBinaries": ["next", "start"]
+}

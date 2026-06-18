@@ -1,0 +1,19 @@
+{
+  "cSpell.words": [
+    "Assayag",
+    "EADDRINUSE",
+    "ECONNREFUSED",
+    "findstr",
+    "orassayag",
+    "socketio",
+    "taskkill",
+    "toppies"
+  ],
+  "cSpell.ignorePaths": [
+    "coverage",
+    "node_modules",
+    "dist",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml"
+  ]
+}

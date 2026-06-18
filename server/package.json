@@ -1,20 +1,46 @@
 {
   "name": "pizza-restaurant-server",
   "version": "1.0.0",
-  "description": "Real-time pizza restaurant management system - Server-side with Node.js, TypeScript, MongoDB, Socket.IO, and worker simulation",
-  "main": "index.ts",
-  "scripts": {
-    "lint": "eslint src",
-    "lint-staged": "lint-staged",
-    "prettier-check": "prettier --check .",
-    "prettier-fix": "prettier --write .",
-    "start": "npm run dbm:up && tsc --project tsconfig.build.json && node dist/src/app.js",
-    "dev": "nodemon src/app.ts",
-    "kill": "taskkill -f -im node.exe"
+  "description": "A real-time restaurant simulator managing a multi-stage pizza workflow. This full-stack application orchestrates concurrent worker queues from dough prep to serving. It uses TypeScript, Node.js, and Socket.IO for live data streaming to an animated Next.js UI, all backed by a MongoDB database",
+  "keywords": [
+    "pizza-restaurant",
+    "real-time",
+    "worker-simulation",
+    "socketio",
+    "typescript",
+    "nodejs",
+    "express",
+    "nextjs",
+    "react",
+    "mongodb",
+    "mongoose",
+    "fullstack",
+    "tailwind-css",
+    "framer-motion",
+    "state-management",
+    "queue-management",
+    "concurrent-processing",
+    "sequence-diagram",
+    "dashboard",
+    "order-tracking"
+  ],
+  "homepage": "https://github.com/orassayag/pizza-restaurant#readme",
+  "bugs": {
+    "url": "https://github.com/orassayag/pizza-restaurant/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/orassayag/pizza-restaurant.git"
+    "url": "git://github.com/orassayag/pizza-restaurant.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/orassayag"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Or Assayag",
+    "email": "orassayag@gmail.com",
+    "url": "https://github.com/orassayag"
   },
   "contributors": [
     {
@@ -23,21 +49,38 @@
       "url": "https://github.com/orassayag"
     }
   ],
-  "keywords": [
-    "pizza",
-    "restaurant",
-    "real-time",
-    "socket.io",
-    "mongodb",
-    "typescript",
-    "nodejs",
-    "express",
-    "worker-simulation",
-    "order-management",
-    "workflow-automation"
+  "type": "commonjs",
+  "main": "src/app.ts",
+  "files": [
+    ".vscode",
+    "config",
+    "logs",
+    "src",
+    ".eslintrc.json",
+    ".gitignore",
+    ".prettierrc",
+    "knip.json",
+    "package-lock.json",
+    "package.json",
+    "tsconfig.build.json",
+    "tsconfig.json"
   ],
-  "author": "Or Assayag",
-  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/app.ts",
+    "kill": "taskkill -f -im node.exe",
+    "lint": "eslint src",
+    "lint-staged": "lint-staged",
+    "prettier-check": "prettier --check .",
+    "prettier-fix": "prettier --write .",
+    "start": "npm run dbm:up && tsc --project tsconfig.build.json && node dist/src/app.js"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "npm run prettier:fix",
+      "npm run lint",
+      "git add"
+    ]
+  },
   "dependencies": {
     "chance": "^1.1.11",
     "debug": "^4.3.4",
@@ -63,12 +106,5 @@
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.8.8"
-  },
-  "lint-staged": {
-    "src/**/*.ts": [
-      "npm run prettier:fix",
-      "npm run lint",
-      "git add"
-    ]
   }
 }

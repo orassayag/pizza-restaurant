@@ -3,10 +3,7 @@ import OrderModel from '../models/order.model';
 import ToppieModel from '../models/toppie.model';
 import PizzaOrderHelper from '../components/pages/PizzaOrder/PizzaOrder.helper';
 
-const usePizzaOrder = ({
-  toggleModal,
-  onCheckoutClick,
-}) => {
+const usePizzaOrder = ({ toggleModal, onCheckoutClick }) => {
   const [ordersData, setOrdersData] = useState([]);
   const [toppiesData, setToppiesData] = useState({});
   const [sizeData, setSizeData] = useState('');
@@ -34,10 +31,13 @@ const usePizzaOrder = ({
   };
 
   const handleAddClick = () => {
-    setOrdersData([...ordersData, {
-      size: sizeData,
-      toppies: toppiesData,
-    }]);
+    setOrdersData([
+      ...ordersData,
+      {
+        size: sizeData,
+        toppies: toppiesData,
+      },
+    ]);
     handleResetClick();
   };
 
@@ -58,8 +58,9 @@ const usePizzaOrder = ({
     const validationPromises = [];
     for (let i = 0; i < ordersData.length; i += 1) {
       const order = ordersData[i];
-      const toppies = Object.keys(order.toppies)
-        .map((key) => new ToppieModel(key, order.toppies[key]));
+      const toppies = Object.keys(order.toppies).map(
+        (key) => new ToppieModel(key, order.toppies[key])
+      );
       const size = PizzaOrderHelper.sizes.find((s) => s.name === order.size);
       const newOrder = new OrderModel(size.title, toppies);
       resultOrders.push(newOrder);

@@ -5,16 +5,10 @@
     "prettier",
     "prettier/@typescript-eslint"
   ],
-  "plugins": [
-    "import",
-    "prettier",
-    "@typescript-eslint"
-  ],
+  "plugins": ["import", "prettier", "@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": [
-      "./tsconfig.json"
-    ]
+    "project": ["./tsconfig.json"]
   },
   "rules": {
     "import/extensions": [
@@ -27,10 +21,7 @@
         "tsx": "never"
       }
     ],
-    "quotes": [
-      2,
-      "single"
-    ],
+    "quotes": [2, "single"],
     "import/prefer-default-export": "off",
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-unused-vars": [
@@ -42,10 +33,7 @@
     "no-underscore-dangle": [
       "error",
       {
-        "allow": [
-          "_id",
-          "_update"
-        ]
+        "allow": ["_id", "_update"]
       }
     ],
     "class-methods-use-this": "off",
